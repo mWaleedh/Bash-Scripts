@@ -16,7 +16,7 @@ if command -v "$PROGRAM" >/dev/null 2>&1; then
 
 	if "$PROGRAM" --version >/dev/null 2>&1; then
 		"$PROGRAM" --version | head -n 1
-    	else
+	else
         	echo "Version info not available"
 	fi
 else
