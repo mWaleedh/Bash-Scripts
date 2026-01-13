@@ -18,7 +18,7 @@ if command -v "$PROGRAM" >/dev/null 2>&1; then
 		"$PROGRAM" --version | head -n 1
     	else
         	echo "Version info not available"
-    	fi
+	fi
 else
     	echo "$PROGRAM is NOT installed"
     	echo "Install with: sudo apt install $PROGRAM"
