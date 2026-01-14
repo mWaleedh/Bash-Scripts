@@ -32,6 +32,6 @@ fi
 
 git commit -m "$MESSAGE" >/dev/null 2>&1
 
-git push >dev/null 2>&1
+git push >/dev/null 2>&1
 
 echo "Pushed $FILE to $REPO"
