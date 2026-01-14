@@ -23,12 +23,12 @@ MESSAGE="$2"
 if [ "$FILE" = "all" ]; then
     MESSAGE="${MESSAGE:-Update all files}"
 
-    git add .
-
-    if git diff --cached --quiet; then
+    if git diff --quiet; then
         echo "No changes to commit"
         exit 0
     fi
+
+    git add .
 
     git commit -m "$MESSAGE"
     git push
@@ -43,12 +43,12 @@ fi
 
 MESSAGE="${MESSAGE:-Update $FILE}"
 
-git add "$FILE"
-
-if git diff --cached --quiet; then
+if git diff --quiet "$FILE"; then
     echo "No changes to commit in $FILE"
     exit 0
 fi
+
+git add "$FILE"
 
 git commit -m "$MESSAGE"
 git push
