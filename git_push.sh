@@ -1,5 +1,5 @@
 #!/bin/bash
- 
+
 # Purpose:
 # Quickly commit and push changes to the current git repository.
 #
