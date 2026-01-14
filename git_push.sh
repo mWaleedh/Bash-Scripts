@@ -15,7 +15,7 @@ if git diff --quiet; then
     exit 0
 fi
 
-REPO="$(basename git rev-parse --show-toplevel)"
+REPO="$(basename "$(git rev-parse --show-toplevel)")"
 FILE=$1
 MESSAGE=$2
 
