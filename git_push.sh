@@ -33,7 +33,6 @@ if [ "$FILE" = "all" ]; then
     git commit -m "$MESSAGE"
     git push
 
-    echo "Pushed all changes to $REPO"
     exit 0
 fi
 
@@ -53,5 +52,3 @@ fi
 
 git commit -m "$MESSAGE"
 git push
-
-echo "Pushed $FILE to $REPO"
