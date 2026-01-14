@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Problem:
+# Purpose:
 # Check if a program is installed and show its version if available
 
 if [ -z "$1" ]; then
