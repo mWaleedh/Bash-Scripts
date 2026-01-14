@@ -30,8 +30,8 @@ if [ -z "$MESSAGE" ]; then
 	MESSAGE="update $FILE"
 fi
 
-git commit -m "$MESSAGE"
+git commit -m "$MESSAGE" >/dev/null 2>&1
 
-git push
+git push >dev/null 2>&1
 
 echo "Pushed $FILE to $REPO"
